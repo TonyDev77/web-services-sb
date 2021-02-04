@@ -10,10 +10,12 @@ public enum OrderStatus {
 	
 	private int code;
 	
+	// constructor
 	private OrderStatus(int code) {
 		this.code = code;
 	}
 
+	// get
 	public int getCode() {
 		return code;
 	}
@@ -24,6 +26,6 @@ public enum OrderStatus {
 				return value;
 			}
 		}
-		throw new IllegalArgumentException("Cógido inválido");
+		throw new IllegalArgumentException("Código inválido");
 	}
 }
