@@ -13,14 +13,14 @@ import com.tony.webservice.repositories.CategoryRepository;
 public class CategoryService {
 
 	@Autowired
-	private CategoryRepository repository;
+	private CategoryRepository catRepository;
 	
 	public List<Category> findAll() {
-		return repository.findAll();
+		return catRepository.findAll();
 	}
 	
 	public Category findById(Long id) {
-		Optional<Category> obj = repository.findById(id);
+		Optional<Category> obj = catRepository.findById(id);
 		return obj.get();
 	}
 }
