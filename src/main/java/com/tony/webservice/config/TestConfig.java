@@ -29,19 +29,14 @@ public class TestConfig implements CommandLineRunner {
 
 	@Autowired
 	private UserRepository userRepository;
-	
 	@Autowired
 	private OrderRepository orderRepository;
-	
 	@Autowired
 	private CategoryRepository categoryRepository;
-	
 	@Autowired
 	private ProductRepository productRepository;
-	
 	@Autowired
 	private OrderItemRepository orderItemRepository;
-
 	@Override
 	public void run(String... args) throws Exception {
 		
